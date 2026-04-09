@@ -10,10 +10,9 @@ function createLoginTracker(username, info) {
       if (attemptCount < 3) {
         attemptCount++;
         announce = 'Login Failed';
-      }
-    }
+        }
 }
-}
+  };
 
 module.exports = {
   ...(typeof createLoginTracker !== 'undefined' && { createLoginTracker })
